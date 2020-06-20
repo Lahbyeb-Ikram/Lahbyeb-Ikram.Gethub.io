@@ -45,7 +45,7 @@ public class AddBook extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://localhost:8081/RestProjectEcommerce/rest/BookService");
+		WebTarget target = client.target("http://localhost:8081/Rest_Service_LAHBYEB_IKRAM_MBDDS/rest/BookService");
 		Category c =new Category();
 		String Name=request.getParameter("name");
 		String Writer=request.getParameter("writer");
